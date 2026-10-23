@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POSSale__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>このポイントのもとになった売上</inlineHelpText>
+    <label>POS売上明細</label>
+    <referenceTo>POSSale__c</referenceTo>
+    <relationshipLabel>ポイント履歴</relationshipLabel>
+    <relationshipName>PointTransactions</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>
