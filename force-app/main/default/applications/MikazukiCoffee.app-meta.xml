@@ -18,6 +18,9 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Campaign</tabs>
+    <tabs>PointReception</tabs>
+    <tabs>PointCard__c</tabs>
+    <tabs>PointTransaction__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>

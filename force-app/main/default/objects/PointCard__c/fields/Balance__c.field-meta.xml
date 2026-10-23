@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Balance__c</fullName>
+    <inlineHelpText>ポイント履歴の合計（付与はプラス、利用はマイナス）</inlineHelpText>
+    <label>ポイント残高</label>
+    <summarizedField>PointTransaction__c.Points__c</summarizedField>
+    <summaryForeignKey>PointTransaction__c.PointCard__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

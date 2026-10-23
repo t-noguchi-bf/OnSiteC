@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PurchaseAmount__c</fullName>
+    <inlineHelpText>このときの購入金額（税込）。キャンペーン効果の集計に使います</inlineHelpText>
+    <label>購入金額</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

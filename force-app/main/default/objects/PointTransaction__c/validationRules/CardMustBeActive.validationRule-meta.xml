@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CardMustBeActive</fullName>
+    <active>true</active>
+    <description>停止中のカードでは付与・利用できない</description>
+    <errorConditionFormula>AND(
+  ISNEW(),
+  ISPICKVAL(PointCard__r.Status__c, &quot;Suspended&quot;)
+)</errorConditionFormula>
+    <errorMessage>このカードは停止されています。付与・利用はできません。</errorMessage>
+</ValidationRule>
