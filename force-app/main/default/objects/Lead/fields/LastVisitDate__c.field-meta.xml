@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LastVisitDate__c</fullName>
+    <inlineHelpText>取引の開始で商談の最終連絡日になります</inlineHelpText>
+    <label>最終訪問日</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

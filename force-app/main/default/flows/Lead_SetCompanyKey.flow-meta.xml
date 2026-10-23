@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <assignments>
+        <name>SetKey</name>
+        <label>照合用の会社名を入れる</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CompanyKey__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>#10 重複チェック用に、会社名から 株式会社・（株）・空白などを除き、全角英数字を半角にした値を入れる</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fKey</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(UPPER({!$Record.Company}), &quot;株式会社&quot;, &quot;&quot;), &quot;（株）&quot;, &quot;&quot;), &quot;(株)&quot;, &quot;&quot;), &quot;㈱&quot;, &quot;&quot;), &quot;有限会社&quot;, &quot;&quot;), &quot;（有）&quot;, &quot;&quot;), &quot;(有)&quot;, &quot;&quot;), &quot;合同会社&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;), &quot;　&quot;, &quot;&quot;), &quot;・&quot;, &quot;&quot;), &quot;-&quot;, &quot;&quot;), &quot;－&quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;), &quot;Ａ&quot;, &quot;A&quot;), &quot;Ｂ&quot;, &quot;B&quot;), &quot;Ｃ&quot;, &quot;C&quot;), &quot;Ｄ&quot;, &quot;D&quot;), &quot;Ｅ&quot;, &quot;E&quot;), &quot;Ｆ&quot;, &quot;F&quot;), &quot;Ｇ&quot;, &quot;G&quot;), &quot;Ｈ&quot;, &quot;H&quot;), &quot;Ｉ&quot;, &quot;I&quot;), &quot;Ｊ&quot;, &quot;J&quot;), &quot;Ｋ&quot;, &quot;K&quot;), &quot;Ｌ&quot;, &quot;L&quot;), &quot;Ｍ&quot;, &quot;M&quot;), &quot;Ｎ&quot;, &quot;N&quot;), &quot;Ｏ&quot;, &quot;O&quot;), &quot;Ｐ&quot;, &quot;P&quot;), &quot;Ｑ&quot;, &quot;Q&quot;), &quot;Ｒ&quot;, &quot;R&quot;), &quot;Ｓ&quot;, &quot;S&quot;), &quot;Ｔ&quot;, &quot;T&quot;), &quot;Ｕ&quot;, &quot;U&quot;), &quot;Ｖ&quot;, &quot;V&quot;), &quot;Ｗ&quot;, &quot;W&quot;), &quot;Ｘ&quot;, &quot;X&quot;), &quot;Ｙ&quot;, &quot;Y&quot;), &quot;Ｚ&quot;, &quot;Z&quot;), &quot;０&quot;, &quot;0&quot;), &quot;１&quot;, &quot;1&quot;), &quot;２&quot;, &quot;2&quot;), &quot;３&quot;, &quot;3&quot;), &quot;４&quot;, &quot;4&quot;), &quot;５&quot;, &quot;5&quot;), &quot;６&quot;, &quot;6&quot;), &quot;７&quot;, &quot;7&quot;), &quot;８&quot;, &quot;8&quot;), &quot;９&quot;, &quot;9&quot;)</expression>
+    </formulas>
+    <interviewLabel>リード：照合用の会社名 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>リード：照合用の会社名</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SetKey</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

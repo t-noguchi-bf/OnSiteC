@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store__c</fullName>
+    <inlineHelpText>訪問した店舗。取引の開始で取引先の担当店舗になります</inlineHelpText>
+    <label>担当店舗</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Store</valueSetName>
+    </valueSet>
+</CustomField>

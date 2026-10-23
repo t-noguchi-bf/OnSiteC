@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <matchingRules>
+        <fullName>MC_AccountNameFuzzy</fullName>
+        <description>#10 会社名だけで、あいまいに一致させる（住所や電話が無い法人でも重複を見つける）</description>
+        <label>会社名のあいまい一致</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Name</fieldName>
+            <matchingMethod>CompanyName</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules>
+    <matchingRules>
+        <fullName>MC_AccountNameKey</fullName>
+        <description>#10 照合用の会社名（株式会社・（株）・空白などを除き、全角英数字を半角にした値）の完全一致</description>
+        <label>照合用の会社名の一致</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>NameKey__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules>
+</MatchingRules>
