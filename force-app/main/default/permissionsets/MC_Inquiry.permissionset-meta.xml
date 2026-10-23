@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>#4 問い合わせ（ケース）の店舗項目</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Store__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>三日月珈琲_問い合わせ</label>
+</PermissionSet>
