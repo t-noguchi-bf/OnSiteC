@@ -1,0 +1,14 @@
+元のリスト,宛名,郵便番号,住所,メール,送り方,送付日
+渋谷店,佐藤 美咲 様,154-0000,東京都世田谷区上馬9-99-99,misaki.sato@example.com,メール,2026/10/10
+渋谷店,山本 大輔 様,150-0000,東京都渋谷区桜丘町9-99-99,d.yamamoto@example.com,メール,2026/10/10
+渋谷店,田村 由紀 様,,,yuki.t@example.com,メール,2026/10/10
+渋谷店,松本 彩 様,,,aya.m@example.com,メール,2026/10/10
+渋谷店,清水 優子 様,,,yuko.shimizu@example.com,メール,2026/10/10
+新宿店,佐藤美咲,,世田谷区,Misaki.Sato@example.com,メール,10/10
+新宿店,佐藤 美咲,,,misaki.sato@example.com,メール,10/10
+新宿店,高木 純,,新宿区,jun.takagi@example.com,メール,10/10
+新宿店,石田 香織,,新宿区,kaori.ishida@example.com,メール,10/10
+新宿店,原田 綾乃,,練馬区,ayano.harada@example.com,メール,10/10
+オンライン,サトウ ミサキ,154-0000,東京都世田谷区上馬９－９９－９９,misaki.sato@example.com,メール・DM,2026-10-10
+オンライン,マツモト アヤ,160-0000,東京都新宿区9-99-99,aya.m@example.com,メール・DM,2026-10-10
+オンライン,ヤマグチ ヨウコ,180-0000,東京都武蔵野市9-99-99,yoko.yamaguchi@example.com,メール・DM,2026-10-10
