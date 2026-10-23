@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RepeatWithin30Days__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>このキャンペーンでの購入のあと、30日以内に同じカードでまた購入があったら自動でオンになります</inlineHelpText>
+    <label>30日以内にリピート</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>空欄のときは、利用日と店舗から実施中のキャンペーンが自動で入ります</inlineHelpText>
+    <label>キャンペーン</label>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>ポイント履歴</relationshipLabel>
+    <relationshipName>PointTransactions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
