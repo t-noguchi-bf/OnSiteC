@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaperStampCount__c</fullName>
+    <inlineHelpText>紙のスタンプカードの個数。ポイントカードへの移行に使う</inlineHelpText>
+    <label>紙スタンプ数</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

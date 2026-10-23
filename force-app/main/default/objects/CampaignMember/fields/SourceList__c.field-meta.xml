@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SourceList__c</fullName>
+    <inlineHelpText>どの店舗の送付リストから来たか</inlineHelpText>
+    <label>元のリスト</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Store</valueSetName>
+    </valueSet>
+</CustomField>

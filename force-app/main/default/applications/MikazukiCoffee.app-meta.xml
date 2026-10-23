@@ -21,6 +21,8 @@
     <tabs>PointReception</tabs>
     <tabs>PointCard__c</tabs>
     <tabs>PointTransaction__c</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>POSSale__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>

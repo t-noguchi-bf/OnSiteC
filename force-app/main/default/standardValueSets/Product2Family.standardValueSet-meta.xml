@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Blend</fullName>
+        <default>false</default>
+        <label>ブレンド</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SingleOrigin</fullName>
+        <default>false</default>
+        <label>シングルオリジン</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seasonal</fullName>
+        <default>false</default>
+        <label>季節限定</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gift</fullName>
+        <default>false</default>
+        <label>ギフト</label>
+    </standardValue>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+</StandardValueSet>

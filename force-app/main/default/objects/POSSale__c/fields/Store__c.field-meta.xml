@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store__c</fullName>
+    <inlineHelpText>POSの店舗コード S01=吉祥寺本店 S02=自由が丘店 S03=二子玉川店 S04=渋谷店 S05=新宿店 S06=池袋店</inlineHelpText>
+    <label>店舗</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Store</valueSetName>
+    </valueSet>
+</CustomField>

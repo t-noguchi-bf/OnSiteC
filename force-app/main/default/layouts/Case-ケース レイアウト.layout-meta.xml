@@ -84,6 +84,14 @@
                 <behavior>Edit</behavior>
                 <field>Store__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ReceivedDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>StaffName__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -131,6 +139,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Description</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Resolution__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
