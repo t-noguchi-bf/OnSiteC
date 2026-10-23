@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store__c</fullName>
+    <label>所属店舗</label>
+    <inlineHelpText>ケース・商談などを作るときの「店舗」の初期値になります</inlineHelpText>
+    <type>Picklist</type>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Store</valueSetName>
+    </valueSet>
+</CustomField>
